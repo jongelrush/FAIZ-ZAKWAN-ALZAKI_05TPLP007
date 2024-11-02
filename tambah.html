@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tambah Karyawan</title>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+ <div class="d-flex">
+        <!-- Sidebar -->
+        <div class="bg-dark text-white vh-100 p-3" id="sidebar">
+            <h2 class="text-center">PT.Mencari Cinta Sejati</h2>
+            <ul class="nav flex-column mt-4">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link text-white"><i class="bi bi-house-fill"></i></i>Dashboard</a>
+                </li>
+                <h6>Menu Karyawan</h6>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link text-white"><i class="bi bi-people-fill"></i></i>Data Karyawan</a>
+                </li>
+                <li class="nav-item">
+                    <a href="jabatan.html" class="nav-link text-white"><i class="bi bi-person"></i></i>Jabatan</a>
+                </li>
+                <li class="nav-item">
+                    <a href="divisi.html" class="nav-link text-white"><i class="bi bi-person-badge-fill"></i></i>Divisi</a>
+                </li>
+                <h6>Menu Absensi</h6>
+                <li class="nav-item">
+                    <a href="hadir.html" class="nav-link text-white"><i class="bi bi-calendar-week-fill"></i>Absensi</i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="izin.html" class="nav-link text-white"><i class="bi bi-calendar-event"></i></i>Izin</a>
+                </li>
+                <li class="nav-item">
+                    <a href="lembur.html" class="nav-link text-white"><i class="bi bi-calendar2-range-fill"></i></i>Lembur</a>
+                </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link text-white"><i class="bi bi-box-arrow-left"></i></i>Keluar</a>
+                </li>
+            </ul>
+        </div>
+
+    <!-- header-->
+  <!-- Header -->
+    <div class="flex-grow-1">
+            <!-- Header -->
+            <header class="bg-dark text-white d-flex justify-content-between align-items-center p-3">
+                <h2 class="mb-0">Dashboard</h2>
+                <div class="user-wrapper d-flex align-items-center">
+                    <i class="bi bi-person-circle"></i>
+                    <div>
+                        <h6 class="mb-0">Faiz Zakwan</h6>
+                        <small>Admin</small>
+                    </div>
+                </div>
+            </header>
+
+    <div class="container-sm mt-5 ">
+      <div class="form-container p-4 shadow rounded">
+        <h2 class="text-center mb-4">Form Tambah Karyawan</h2>
+        <form>
+          <div class="mb-3">
+            <label for="namaKaryawan" class="form-label">Nama Karyawan</label>
+            <input type="text" class="form-control" id="namaKaryawan" placeholder="Masukkan nama lengkap" required />
+          </div>
+
+          <div class="mb-3">
+            <label for="jabatan" class="form-label">Jabatan</label>
+            <input type="text" class="form-control" id="jabatan" placeholder="Masukkan jabatan" required />
+          </div>
+
+          <div class="mb-3">
+            <label for="divisi" class="form-label">Divisi</label>
+            <input type="text" class="form-control" id="divisi" placeholder="Masukkan divisi" required />
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Masukkan email" required />
+          </div>
+
+          <div class="mb-3">
+            <label for="noTelepon" class="form-label">No. Telepon</label>
+            <input type="tel" class="form-control" id="noTelepon" placeholder="Masukkan no. telepon" required />
+          </div>
+
+          <div class="mb-3">
+            <label for="tanggalBergabung" class="form-label">Tanggal Bergabung</label>
+            <input type="date" class="form-control" id="tanggalBergabung" required />
+          </div>
+
+          <div class="d-grid mt-4">
+            <button type="submit" class="btn btn-primary">Simpan Data Karyawan</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

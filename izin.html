@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daftar Izin Karyawan</title>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!--side bar-->
+     <div class="d-flex">
+        <!-- Sidebar -->
+        <div class="bg-dark text-white vh-100 p-3" id="sidebar">
+            <h2 class="text-center">PT.Mencari Cinta Sejati</h2>
+            <ul class="nav flex-column mt-4">
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white"><i class="bi bi-house-fill"></i></i>Dashboard</a>
+                </li>
+                <h6>Menu Karyawan</h6>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link text-white"><i class="bi bi-people-fill"></i></i>Data Karyawan</a>
+                </li>
+                <li class="nav-item">
+                    <a href="jabatan.html" class="nav-link text-white"><i class="bi bi-person"></i></i>Jabatan</a>
+                </li>
+                <li class="nav-item">
+                    <a href="divisi.html" class="nav-link text-white"><i class="bi bi-person-badge-fill"></i></i>Divisi</a>
+                </li>
+                <h6>Menu Absensi</h6>
+                <li class="nav-item">
+                    <a href="hadir.html" class="nav-link text-white"><i class="bi bi-calendar-week-fill"></i>Absensi</i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="izin.html" class="nav-link text-white"><i class="bi bi-calendar-event"></i></i>Izin</a>
+                </li>
+                <li class="nav-item">
+                    <a href="lembur.html" class="nav-link text-white"><i class="bi bi-calendar2-range-fill"></i></i>Lembur</a>
+                </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link text-white"><i class="bi bi-box-arrow-left"></i></i>Keluar</a>
+                </li>
+            </ul>
+        </div>
+
+    <!-- header-->
+  <!-- Header -->
+    <div class="flex-grow-1">
+            <!-- Header -->
+            <header class="bg-dark text-white d-flex justify-content-between align-items-center p-3">
+                <h2 class="mb-0">Dashboard</h2>
+                <div class="user-wrapper d-flex align-items-center">
+                    <i class="bi bi-person-circle"></i>
+                    <div>
+                        <h6 class="mb-0">Faiz Zakwan</h6>
+                        <small>Admin</small>
+                    </div>
+                </div>
+            </header>
+
+    
+    <div class="container my-5">
+      <h2 class="text-center mb-4">Daftar Izin Karyawan</h2>
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover table-striped align-middle">
+          <thead class="table-dark">
+            <tr>
+              <th>No</th>
+              <th>Nama Karyawan</th>
+              <th>Tanggal Izin</th>
+              <th>Jenis Izin</th>
+              <th>Durasi (hari)</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Faiz zakwan</td>
+              <td>2024-10-01</td>
+              <td>Sakit</td>
+              <td>2</td>
+              <td><span class="badge bg-success">Disetujui</span></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>ELpajay</td>
+              <td>2024-10-05</td>
+              <td>Cuti</td>
+              <td>5</td>
+              <td><span class="badge bg-warning text-dark">Menunggu</span></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Marcussel</td>
+              <td>2024-10-07</td>
+              <td>Izin Pribadi</td>
+              <td>1</td>
+              <td><span class="badge bg-danger">Ditolak</span></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Asep Ashomthing</td>
+              <td>2024-10-10</td>
+              <td>Cuti Berduka</td>
+              <td>7</td>
+              <td><span class="badge bg-success">Disetujui</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
