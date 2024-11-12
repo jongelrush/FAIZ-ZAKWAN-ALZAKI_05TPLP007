@@ -103,14 +103,14 @@
     <!--tabel karyawan-->
 <div class="container mt-5">
     <div class="d-flex justify-content-between align-items-center mb-4">
-        <h2>Data Karyawan</h2>
+        <h4>Data Karyawan</h4>
         <!-- Tombol Tambah Karyawan -->
         <a href="tambah.html" class="btn btn-primary" onclick="tambahKaryawan()">
             <i class="fas fa-user-plus me-2"></i>Tambah Karyawan
         </a>
     </div>
 
-    <div class="table-responsive">
+    <div class="table-karyawan">
         <table class="table table-hover table-striped align-middle">
             <thead class="table-dark">
                 <tr>
@@ -175,6 +175,19 @@
         // Di sini Anda bisa mengarahkan ke halaman atau form tambah karyawan yang sebenarnya
     }
 </script>
+ <script>
+        AOS.init({
+          once: true,
+          duration: 400,
+        });
+      </script>
+      <script>
+        gsap.registerPlugin(TextPlugin)
+        gsap.to('.lead', {duration: 2, delay: 1.5, text: 'Student | Outdoor Enthusias' });
+gsap.from('.jumbotron img', {duration: 1, rotateY: 360, opacity: 0, });
+gsap.from('.navbar', { duration: 1.5, y: '100%', opacity: 0, ease: 'bounce' });
+gsap.from('.display-4', { duration: 1, x: -50, opacity: 0, delay: 0.5, ease: 'back' });
+      </script>
 </body>
 </html>
 
